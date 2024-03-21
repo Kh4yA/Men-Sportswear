@@ -1,0 +1,48 @@
+/* Icône burger */
+.menu-burger{
+    display: none;
+    @media screen and (max-width:950px){
+        display: block;
+    }
+}
+#burger {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 5px;
+    background-color: var(--white);
+    border-radius: 3px;
+  }
+  #burger::before,
+  #burger::after {
+    content: "";
+    width: 35px;
+    height: 5px;
+    background-color: var(--white);
+    display: inline-block;
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+  }
+  /* Mouvement burger */
+  #burger::before {
+    top: -9px;
+  }
+  #burger::after {
+    top: 9px;
+  }
+  #burger.open {
+    background: transparent;
+  }
+  #burger.open::before {
+    background-color: red;
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #burger.open::after {
+    background-color: red;
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  

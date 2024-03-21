@@ -1,0 +1,73 @@
+//header
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: var(--dark);
+  width: 100%;
+  height: 100px;
+  padding: 0 50px;
+}
+.sidenav {
+  width: 66.66%;
+  @media screen and (max-width: 1100px) {
+    width: 80%;
+  }
+
+}
+.panier > p,
+.account > p {
+  display: none;
+}
+.logo{
+  width: 33.33%;
+  @media screen and (max-width: 1100px) {
+  width: 20%;
+  }
+
+}
+.nav-outdoor{
+  border: 1px solid var(--white);
+  padding: 12px 32px;
+}
+@media screen and (max-width: 950px) {
+  .sidenav {
+    z-index: 1000;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    transform: translate(200px);
+    height: calc(100vh - 100px);
+    background-color: var(--dark);
+    transition: all 0.5s ease;
+    padding: 20px;
+  }
+  .sidenav.active {
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+  .sidenav {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .panier,
+  .account {
+    display: block;
+    width: 100%;
+  }
+  .panier > p,
+  .account > p {
+    width: 100%;
+    display: block;
+    color: white;
+  }
+  .panier,
+  .account {
+    display: inline-flex;
+  }
+  .sidenav ul li{
+    text-align: center;
+    width: 100%;
+  }
+}

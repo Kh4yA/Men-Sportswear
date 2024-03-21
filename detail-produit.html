@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez les baskets M'S, la quintessence du confort et du style. Parfaites pour ceux qui recherchent une liberté de mouvement sans compromis, ces chaussures combinent un design contemporain avec des matériaux de haute qualité. Explorez notre collection dès maintenant et laissez-vous emporter par l'expérience M'S."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "name": "basket M'S",
+        "author": {
+          "@type": "Person",
+          "name": "Jean Dupont"
+        },
+        "datePublished": "2024-03-21",
+        "Ces basket son parfaite pour faire du soprt, course a pied, salle de sport .",
+      }
+      </script>
+    <!-- Lien css -->
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <title>
+      Sentez la liberté avec les baskets M'S - Confort et style réunis
+    </title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="flex space-between item-center">
+      <div>
+        <a href="index.html"
+          ><img src="./public/img/imagesSIte/logo-blanc.png" alt="logo MS"
+        /></a>
+      </div>
+      <!-- Menu burger -->
+      <div class="menu-burger">
+        <a href="#" id="openBtn">
+          <span id="burger"></span>
+        </a>
+      </div>
+
+      <!-- nav -->
+      <div class="sidenav flex space-between item-center">
+        <nav>
+          <ul class="flex gap-30 item-center">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Chaussures</a></li>
+            <li><a href="#">Vêtements</a></li>
+            <li><a href="#">Accessoires</a></li>
+            <li class="nav-outdoor"><a href="./categorie-basket.html" >@utdoor</a></li>
+          </ul>
+        </nav>
+        <!-- panier / comptes -->
+        <div class="flex gap-30">
+          <div class="panier text-center item-center">
+            <img
+              src="public/img/imagesSIte/header-pannier.png"
+              alt="Logo d'un panier "
+            />
+            <p>Panier</p>
+          </div>
+          <div class="account text-center item-center">
+            <img
+              src="public/img/imagesSIte/header-account.png"
+              alt="Logo d'un personnage pour compte client"
+            />
+            <p>compte</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-1200">
+      <!-- Detail produit -->
+      <section>
+        <div class="navigation-page">
+          <a href="#" class="chaussure item-center">Chaussures ></a>
+          <a href="categorie-basket.html" class="basket flex item-center"
+            >Baskets ></a
+          >
+          <a href="#" class="libelle flex item-center">Libellé du produit</a>
+        </div>
+        <article class="detail-produit flex space-between gap-30 margin-top10">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="public/img/details-produit/basket2-bleu.png"
+                  alt="image de basket bleu"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/details-produit/basket2-violet.png"
+                  alt="image de basket violet"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/details-produit/basket2-rouge.png"
+                  alt="image de basket rouge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="public/img/details-produit/basket2-vert.png"
+                  alt="image de basket vert"
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+          </div>
+          <div class="detail-content">
+            <div class="flex space-between margin-bottom8">
+              <h2>libellé du produit</h2>
+              <p class="price">159€</p>
+            </div>
+            <div class="margin-bottom8">
+              <p>
+                Dernier née de la gamme cette basket est conçue pour la course
+                apied sur bitume comme sur les chemin légèremetn esarpés
+              </p>
+            </div>
+            <div class="margin-bottom8">
+              <ul>
+                <li>semelle : caoutchouc naturel anti dérapant</li>
+                <li>bon maintien du Pied</li>
+                <li>
+                  Aération optimale grâce à la structure micro alvéolée de sa
+                  coque
+                </li>
+              </ul>
+            </div>
+            <div class="flex space-between margin-bottom8">
+              <p class="bold">Couleurs disponibles</p>
+              <div class="flex gap-10">
+                <div class="circle-blue"></div>
+                <div class="circle-violet"></div>
+                <div class="circle-red"></div>
+                <div class="circle-green"></div>
+              </div>
+            </div>
+            <div class="flex space-between margin-bottom8">
+              <p class="bold">Tailles disponibles</p>
+              <div>
+                <select name="taille" id="taille">
+                  <option value="">Choisissez votre pointure</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                </select>
+              </div>
+            </div>
+            <div class="margin-bottom8">
+              <p class="bold">Nombre d'articles en stock</p>
+            </div>
+            <div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="avis-client margin-top10">
+        <h2 class="margin-bottom20">Avis consommateurs</h2>
+        <div class="avis flex margin-bottom20">
+          <div class="flex item-center">
+            <div class="avis-icon flex item-center">
+              <img src="public/img/imagesSIte/header-account.png" alt="" />
+            </div>
+          </div>
+          <div class="avis-content">
+            <div class="flex item-center gap-30 margin-bottom20">
+              <p class="bold">Nicolas</p>
+              <div>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>☆</span>
+              </div>
+            </div>
+            <div>
+              <p>
+                Ces baskets sont super, je les prends pour courrir ou même en
+                ville pour sortir car elles sont sympa en plus et faciles a
+                porter, je recommande grandement ce produit
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="avis flex margin-bottom20">
+          <div class="flex item-center">
+            <div class="avis-icon flex item-center">
+              <img src="public/img/imagesSIte/header-account.png" alt="" />
+            </div>
+          </div>
+          <div class="avis-content">
+            <div class="flex item-center gap-30 margin-bottom20">
+              <p class="bold">Nicolas</p>
+              <div>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>☆</span>
+              </div>
+            </div>
+            <div>
+              <p>
+                Ces baskets sont super, je les prends pour courrir ou même en
+                ville pour sortir car elles sont sympa en plus et faciles a
+                porter, je recommande grandement ce produit
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="avis flex margin-bottom">
+          <div class="flex item-center">
+            <div class="avis-icon flex item-center">
+              <img src="public/img/imagesSIte/header-account.png" alt="" />
+            </div>
+          </div>
+          <div class="avis-content">
+            <div class="flex item-center gap-30 margin-bottom20">
+              <p class="bold">Nicolas</p>
+              <div>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>☆</span>
+              </div>
+            </div>
+            <div>
+              <p>
+                Ces baskets sont super, je les prends pour courrir ou même en
+                ville pour sortir car elles sont sympa en plus et faciles a
+                porter, je recommande grandement ce produit
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="margin-top10">
+      <!-- logo -->
+      <div class="container-1200 margin-bottom8">
+        <div class="footer-logo">
+          <div class="text-center margin-bottom20">
+            <img src="public/img/imagesSIte/logo-blanc.png" alt="logo M'S" />
+          </div>
+          <p class="text-center margin-bottom20">
+            Retrouvez nos botuique près de chez vous
+          </p>
+        </div>
+        <!-- Cartographie -->
+        <div id="map"></div>
+        <!-- bas de footer -->
+        <div class="footer-bottom margin-top10 flex space-between">
+          <!-- colonne gauche -->
+          <div class="footer-bottom-left width-30 flex">
+            <p class="bold width-100 margin-bottom20">Plan du site</p>
+            <ul>
+              <li><a href="#">Acceuil</a></li>
+              <li><a href="#">Vetements</a></li>
+              <li><a href="#">Chaussures</a></li>
+              <li><a href="#">@utdoor</a></li>
+            </ul>
+          </div>
+          <!-- Colonne centre -->
+          <div class="footer-bottom-center width-30 flex">
+            <p class="bold">Horaires d'ouverture de nos boutiques</p>
+            <p>du lundi au vendredi de 10h à 12h30 puis de 13H30 à 19h</p>
+            <p>Le samedi de 9h à 18h30 non stop</p>
+          </div>
+          <!-- colonne droite -->
+          <div class="footer-bottom-right width-30 flex">
+            <p class="bold">Retrouvez nous sur les réseaux sociaux</p>
+            <div>
+              <a href=""
+                ><img
+                  src="public/img/imagesSIte/TwitterX.png"
+                  alt="lego de twitterX"
+              /></a>
+              <a href=""
+                ><img
+                  src="public/img/imagesSIte/Facebook.png"
+                  alt="logo de facebook"
+              /></a>
+              <a href=""
+                ><img
+                  src="public/img/imagesSIte/TikTok.png"
+                  alt="logo de tiktok"
+              /></a>
+              <a href=""
+                ><img
+                  src="public/img/imagesSIte/Instagram.png"
+                  alt="jogo de instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="width-100 text-center">
+          <span class="mentions">Mentions légales</span> du site, site crée par
+          Daszczynski Mathieu
+        </p>
+      </div>
+    </footer>
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="public/js/app.js" defer></script>
+    <script src="public/js/detailProduit.js"></script>
+  </body>
+</html>

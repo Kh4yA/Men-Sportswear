@@ -1,0 +1,26 @@
+// font  Archivo_Black
+@font-face {
+    font-family: Archivo_Black;
+    src: url(../../font/Archivo_Black/ArchivoBlack-Regular.ttf), format('ttf');
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../../font/Roboto/Roboto-Regular.ttf), format('ttf');
+    font-weight: 100 900;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../../font/Roboto/Roboto-Bold.ttf), format('ttf');
+
+}
+
+:root{
+    --dark : #222222;
+    --blue : #0E6286;
+    --light-grey : #EBEBEB;
+    --white : #FFFFFF;
+    --blue-hover : #3E8BAC;
+    --font-title : "Archivo Black", sans-serif;
+    --other-font-regular : "Roboto-Regular", sans-serif;
+    --other-font-bold : "Roboto-Bold", sans-serif;
+}

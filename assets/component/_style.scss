@@ -1,0 +1,292 @@
+//section prosuit par categorie
+.products h2 {
+  padding: 20px 0;
+}
+.products article {
+  width: 25%;
+  @media screen and (max-width: 768px) {
+    width: 30%;
+  }
+  @media screen and (max-width: 589px) {
+    width: 51%;
+  }
+}
+.products article p {
+  padding: 26px 0;
+}
+.products article h4 {
+  padding: 5px;
+  background-color: var(--dark);
+  color: var(--white);
+}
+//section game @outdoor
+.outdoor {
+  position: relative;
+  background-image: url(../../public/img/imagesSIte/accueil-bg-outdoor.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  @media screen and (max-width: 768px) {
+    background-position: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  }
+}
+//outddor content
+.outdoor-content {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    top: 10%;
+    left: 5%;
+  }
+}
+//nouvetauté
+.news {
+  position: relative;
+  width: 50%;
+  max-width: 790px;
+  top: -15vh;
+  left: 15%;
+  border: 1px solid var(--dark);
+  @media screen and (max-width: 1100px) {
+    width: 80%;
+    left: 10%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    left: 5%;
+  }
+  @media screen and (max-width: 768px) {
+    position: static;
+    width: 100%;
+    border: none;
+  }
+}
+.news p,
+.news ul li {
+  color: var(--white);
+}
+.news ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.news a {
+  color: var(--blue-hover);
+}
+.news-img {
+  width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.news-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.news-content {
+  width: 60%;
+  background-color: var(--dark);
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.news-content > div > p {
+  font-size: 1.375rem;
+}
+.news .price,
+.price {
+  color: var(--blue-hover);
+  font-size: 2rem;
+}
+//offre
+@media screen and (max-width: 768px) {
+  .offre {
+    flex-direction: column-reverse;
+  }
+}
+
+.offre-img {
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.offre-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.offre-content {
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+    gap: 30px;
+  }
+}
+//banner
+.banner-marque {
+  width: 100%;
+  flex-wrap: nowrap;
+  background-color: var(--dark);
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.banner-marque h2 {
+  padding: 20px 0;
+  color: var(--white);
+}
+//qui sommes nous
+.bio img{
+width: 100%;
+height: auto;
+}
+.bio-content{
+padding-right: 10px;
+}
+//contactez nous
+.contact {
+  flex-wrap: nowrap;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+.contact-img {
+  height: auto;
+}
+.contact-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.name > div {
+  width: 48%;
+}
+.contact-content {
+  padding: 0 20px;
+}
+input,select{
+  padding: 5px;
+}
+form {
+  width: 90%;
+  gap: 20px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5%;
+  }
+}
+form label {
+  font-family: var(--other-font-bold);
+  padding-bottom: 5px;
+  font-weight: 600;
+  display: block;
+}
+form input,
+select,
+textarea {
+  width: 100%;
+}
+input[type="submit"] {
+  display: inline-block;
+  color: var(--white);
+}
+//page @utdoor
+.navigation-page {
+  margin-top: 5%;
+}
+.card-content{
+    margin: 0 10px 20px 10px;
+}
+.chaussure {
+  display: inline-flex;
+  width: fit-content;
+  background-color: var(--dark);
+  padding: 5px 16px;
+}
+.basket {
+  display: inline-flex;
+  width: fit-content;
+  background-color: var(--light-grey);
+  color: var(--dark);
+  padding: 5px 16px;
+}
+.libelle {
+  display: inline-flex;
+  width: fit-content;
+  background-color: var(--blue);
+  padding: 5px 16px;
+}
+//page libelle produit
+.circle-blue{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.circle-violet{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: violet;
+}
+.circle-red{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+.circle-green{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+.detail-produit{
+width: 100%;
+flex-wrap: nowrap;
+@media screen and (max-width:768px){
+  width: 90%;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+}
+.swiper{
+width: 50%;
+@media screen and (max-width:768px){
+    width: 100%;
+}
+
+}
+.detail-content{
+    width: 50%;
+    @media screen and (max-width:768px){
+      width: 100%;
+  }
+  
+}
+// avis Consommateurs
+.avis-icon{
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--dark);
+}
+.avis{
+    width: 100%;
+}
+.avis-content{
+    width: 70%;
+    margin-left: 5%;
+}

@@ -1,0 +1,34 @@
+//footer
+footer{
+    padding: 20px 0;
+    background-color: var(--dark);
+    @media screen and (max-width:768px) {
+        padding: 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer-bottom{
+        flex-direction: column;
+    }
+    .footer-bottom div{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .footer-bottom-right,
+    .footer-bottom-center{
+        gap: 30px;
+    }
+}
+footer p{
+    color: var(--white);
+}
+.mentions{
+    color: var(--blue-hover);
+}
+// map Leaflet
+#map{
+    width: 60%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
