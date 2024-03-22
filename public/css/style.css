@@ -338,7 +338,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
 }
 @media screen and (max-width: 768px) {
