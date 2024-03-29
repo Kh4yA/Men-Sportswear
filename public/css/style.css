@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @font-face {
-  font-family: Archivo_Black;
-  src: url(../../font/Archivo_Black/ArchivoBlack-Regular.ttf), format("ttf");
+  font-family: "Archivo_Black";
+  src: url(../../font/Archivo_Black/ArchivoBlack-Regular.ttf), format("truetype");
 }
 @font-face {
   font-family: "Roboto-Regular";
-  src: url(../../font/Roboto/Roboto-Regular.ttf), format("ttf");
+  src: url(../../font/Roboto/Roboto-Regular.ttf), format("truetype");
   font-weight: 100 900;
 }
 @font-face {
-  font-family: Roboto;
-  src: url(../../font/Roboto/Roboto-Bold.ttf), format("ttf");
+  font-family: "Roboto";
+  src: url(../../font/Roboto/Roboto-Bold.ttf), format("truetype");
 }
 :root {
   --dark: #222222;
@@ -339,7 +339,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 80vh;
+  height: 50vh;
 }
 @media screen and (max-width: 768px) {
   .hero {
